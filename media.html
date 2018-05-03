@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>커서를 대면 음악이나와요</title>
+	<background="black">
+</head>
+<body>
+	<img src="fight.gif" id="apple">
+	<audio id="music">
+  		<source src="music.mp3" type="audio/mpeg">
+	</audio>
+
+
+	<img src="fight2.gif" id="apple2">
+	<audio id="musicc">
+  		<source src="musicc.mp3" type="audio/mpeg">
+	</audio>
+
+
+
+</body>
+
+<script type="text/javascript">
+	apple.onmouseover = function(){
+		music.play();
+	}
+
+	apple.onmouseout = function(){
+		// music.load();
+		music.pause();
+	}
+</script>
+
+<script type="text/javascript">
+	apple2.onmouseover = function(){
+		musicc.play();
+	}
+
+	apple2.onmouseout = function(){
+		// music.load();
+		musicc.pause();
+	}
+</script>
+</html>
